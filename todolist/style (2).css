@@ -1,0 +1,102 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: url(https://wallpaperaccess.com/full/9361335.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.8); /* Slight transparency to see background image */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0 0 20px;
+    color: #333;
+}
+
+.input-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#taskInput {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+#addTaskBtn {
+    padding: 10px;
+    border: none;
+    background: #28a745;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+#addTaskBtn:hover {
+    background: #218838;
+}
+
+#taskList {
+    list-style: none;
+    padding: 0;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.task.completed {
+    text-decoration: line-through;
+    background: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.task button {
+    background: #dc3545;
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.task button:hover {
+    background: #c82333;
+}
+
+.task span {
+    cursor: pointer;
+}
+
+#clearCompletedBtn {
+    background: #ff0000;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#clearCompletedBtn:hover {
+    background: #cc0000;
+}
